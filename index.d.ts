@@ -17,7 +17,7 @@ declare function createError (
   message: string,
   statusCode?: number,
   Base?: Error
-): FastifyError
+): { new(): FastifyError }
 
 
 export default createError
